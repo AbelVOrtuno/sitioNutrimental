@@ -1,0 +1,271 @@
+// Estilos a la cabecera //
+.navegacion
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 1rem
+    gap 1rem
+    width 100%
+.logo
+    font-size 3rem
+    font-weight bold
+.menu
+    display flex
+    flex-direction column
+    align-items center
+    gap 2rem
+.reservar
+    display flex
+    flex-direction: column
+    align-items: center
+    gap: .5rem
+.btn-reservar
+    background: $primario
+    font-size: 1.4rem
+    font-family: Arial, Helvetica, sans-serif
+    font-style: oblique
+    padding: .5rem 1.5rem
+    border-radius: 1rem
+    cursor pointer
+    transition: background 0.3s 
+    &:hover
+        background: darken($oscuro, 10%)
+.menu-select
+    background: $gris
+    color: $blanco
+    border none
+    border-radius: 1rem
+    padding: 0.5rem 1rem
+    font-size: 1rem
+    cursor pointer
+    transition: border 0.3s, background 0.3s
+    &:hover
+        background: #222
+        border-color: #0ff
+@media (min-width 768px) 
+    .navegacion
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding: 1rem 2rem
+    .menu
+        flex-direction row
+        justify-content center
+        flex 1
+        gap: 2rem
+        text-align: center
+    .logo
+        flex: 1
+        text-align left
+    .reservar
+        flex: 1
+        justify-content center
+        flex-direction row
+        gap 1rem
+/*.menu
+    display: flex
+    align-items: center
+    gap: 2rem
+    padding: 1rem 2rem
+a
+    color: $blanco
+    text-decoration: none
+    font-weight: 500
+    transition: color 0.3s
+    &:hover
+        color: black
+// Estilo del select //
+.menu-select
+    background: $gris
+    color: $blanco
+    border none
+    border-radius: 1rem
+    padding: 0.5rem 1rem
+    font-size: 1rem
+    cursor pointer
+    transition: border 0.3s, background 0.3s
+    &:hover
+        background: #222
+        border-color: #0ff
+// Ahora en movil //
+@media (max-width 768px) 
+    .logo
+        text-align: center
+    .menu
+        flex-direction: column
+        align-items: center
+        width 100%
+        padding: 1rem
+    a, .menu-select
+        margin-bottom: .5rem
+        text-align: left
+    .reservar
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .btn-reservar
+        background-color: $primario
+        color: $blanco
+        font-size: 1rem
+        padding: .5rem 1rem
+        border-radius: 1rem
+.reservar
+    display: flex
+    align-items: center
+    gap: 2rem
+.btn-reservar
+    background-color: $primario
+    color: $blanco
+    font-size: 1rem
+    padding: .5rem 1rem
+    border-radius: 1rem
+    transition background 0.3s
+    &:hover
+        background: darken($primario, 10%) */
+
+
+
+/*header
+    background-color $blanco
+    box-shadow 0 2px 1rem rgba(0,0,0,0.05) 
+    padding: 1rem 2rem
+.navegacion
+    display flex
+    align-items center
+    justify-content space-between
+    flex-wrap wrap
+.logo
+    font-size 3rem
+    font-weight bold
+.menu
+    display flex
+    align-items center
+    gap 2rem
+    padding: 1rem 2rem
+a
+    color: $blanco
+    text-decoration none
+    font-weight 500
+    transition: color 0.3s
+    &:hover
+        color: $oscuro
+// Contenedor del boton desplegable //
+/*.dropdown
+    position relative
+.dropbtn
+    background: none
+    border none
+    color: $blanco
+    font-size: 1rem
+    font-weight: 500
+    cursor pointer
+    padding 0.5rem 1rem
+    transition: color 0.3s
+    &:hover
+        color: $gris
+.dropdown-content
+    display none
+    position absolute
+    top 100%
+    left 0
+    background $blanco
+    flex-direction: column
+    border-radius: .5rem
+    box-shadow: 0 2px 1rem rgba(0,0,0,0.1)
+    flex-direction: column
+    min-width 150px
+    z-index 10
+a
+    color $primario
+    padding .8rem 1rem
+    display block
+    &:hover
+        background: $gris 
+// Clase activa que se agrega al hacer clic //
+.dropdown.active .dropdown-content
+    display flex */
+
+/* adaptado a moviles 
+@media (max-width 768px) 
+    .menu
+        flex-direction: column
+        align-items: flex-start
+        gap: 0
+        padding 1rem
+        width 100%
+    a
+        width 100%
+        text-align center
+        padding 0.5rem 1rem
+        border-bottom 1px solid #222
+    .dropbtn
+        width 100%
+        text-align left
+        background $blanco
+        padding: 0.5rem 1rem
+        font-size: 1.1rem
+    .reservar
+        display block
+        flex-direction column
+        align-items center
+    .dropdown-content
+        position static
+        background $blanco
+        color $gris
+        border .1rem solid $oscuro
+        box-shadow none
+        width 100%
+    &.active .dropdown-content
+        display flex
+        animation desplegar 0.3s ease
+@keyframes desplegar 
+    from
+        opacity 0
+        transform translateY(-10px)
+    to
+        opacity 1
+        transform translateX(0)
+.reservar
+    display flex
+    align-items center
+    gap 1rem
+.btn-reservar
+    background: $primario
+    color $blanco
+    border none
+    padding .6rem 1.2rem
+    font-weight 600
+    border-radius 1rem
+    cursor pointer
+    transition background .3s
+    &:hover
+        background $gris
+svg
+    cursor pointer
+.header
+    display flex
+    justify-content space-between
+    align-items center
+    padding 1.5rem 3rem
+    background $blanco
+    box-shadow 0 2px 1rem rgba(0,0,0,0.05) 
+.logo
+    font-weight 700
+    color $oscuro
+    font-size 3rem
+    padding 1rem
+.navegacion ul
+    display: flex
+    list-style none
+    gap 2rem
+.navegacion a
+    color $oscuro
+    font-weight 500
+.btn-reservar
+    background $primario
+    color $blanco
+    padding .7rem 1.2rem
+    border-radius .5rem */
