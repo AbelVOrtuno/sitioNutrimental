@@ -15,26 +15,57 @@
 </head>
 <body>
     <header class="header">
-        <div class="encabezado logo">Nutrition</div>
-        <nav class="navegacion">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                
-                <select name="Paginas" id="Menu Oculto">
-                    <option value="pages">Pages</option>
+        <div class="navegacion">
+            <h1 class="logo">Nutrition Live</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <select class="menu-select" id="pageSelect">
+                    <option value="">Pages</option>
                     <option value="landing.html">Landing</option>
                     <option value="faq.html">FAQ</option>
                     <option value="services.html">Services</option>
-                    <option value="stores.html">Stores</option>
+                    <option value="store.html">Store</option>
                     <option value="blog.html">Blog Page</option>
                     <option value="pricing.html">Pricing</option>
                     <option value="booking.html">Booking</option>
                 </select>
-                <li><a href="contacto.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="contacto.html">Reservar una Cita</a>
+
+                <a href="contacto.html">Contact</a>
+
+                <!--<div class="dropdown">
+                    <button class="dropbtn">Pages</button>
+                    <div class="dropdown-content">
+                        <a href="landing.html">Landing</a>
+                        <a href="faq.html">FaQ</a>
+                        <a href="services.html">Services</a>
+                        <a href="store.html">Store</a>
+                        <a href="blog.html">Blog Page</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="booking.html">Booking</a>
+                    </div>
+                </div>-->
+                
+            </nav>
+            <div class="reservar">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffcc00"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+                <a href="contacto.html" class="btn-reservar">Reservar una Cita</a>
+            </div>
+        </div>
     </header>
 
 <!--Seccion del Banner-->  
@@ -47,8 +78,8 @@
 <!--Blog y Entradas-->
     <main class="blog">
         <article class="article">
-            <img src="img/sopaFit.jpg" alt="Platillo Tailandes" width="200px">
-            <div class="article content">
+            <img src="img/sopaFit.jpg" alt="Platillo Tailandes" >
+            <div class="article-content">
                 <h3>La mayor concentracion de nutrientes saludables</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quisquam ad! Voluptatibus recusandae, cumque,
                     maiores consectetur natus totam necessitatibus voluptas facere in, nulla dolor iusto aut consequuntur culpa velit. 
@@ -58,8 +89,8 @@
         </article>
         
         <article class="article">
-            <img src="img/calabazas.jpg" alt="calabazas de Castilla" width="200px">
-            <div class="article content">
+            <img src="img/calabazas.jpg" alt="calabazas de Castilla" >
+            <div class="article-content">
                 <h3>¿Como cocinar calabaza de castilla?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quisquam ad! Voluptatibus recusandae, cumque,
                     maiores consectetur natus totam necessitatibus voluptas facere in, nulla dolor iusto aut consequuntur culpa velit. 
@@ -69,8 +100,8 @@
         </article>
 
         <article class="article">
-            <img src="img/fresas.jpg" alt="Fresas recien cortadas" width="200px">
-            <div class="article content">
+            <img src="img/fresas.jpg" alt="Fresas recien cortadas" >
+            <div class="article-content">
                 <h3>Los nutrientes de las fresas y sus propiedades</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quisquam ad! Voluptatibus recusandae, cumque,
                     maiores consectetur natus totam necessitatibus voluptas facere in, nulla dolor iusto aut consequuntur culpa velit. 
@@ -80,8 +111,8 @@
         </article>
 
         <article class="article">
-            <img src="img/garbanzos.jpg" alt="Garbanzo dulce" width="200px">
-            <div class="article content">
+            <img src="img/garbanzos.jpg" alt="Garbanzo dulce" >
+            <div class="article-content">
                 <h3>Recetas deliciosas con garbanzos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quisquam ad! Voluptatibus recusandae, cumque,
                     maiores consectetur natus totam necessitatibus voluptas facere in, nulla dolor iusto aut consequuntur culpa velit. 
@@ -91,8 +122,8 @@
         </article>
 
         <article class="article">
-            <img src="img/naranjas.jpg" alt="Naranjas grandes" width="200px">
-            <div class="article content">
+            <img src="img/naranjas.jpg" alt="Naranjas grandes" >
+            <div class="article-content">
                 <h3>Diferentes formas de comer naranjas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quisquam ad! Voluptatibus recusandae, cumque,
                     maiores consectetur natus totam necessitatibus voluptas facere in, nulla dolor iusto aut consequuntur culpa velit. 
@@ -102,8 +133,8 @@
         </article>
 
         <article class="article">
-            <img src="img/verduras.jpg" alt="Muchas verduras" width="200px">
-            <div class="article content">
+            <img src="img/verduras.jpg" alt="Muchas verduras" >
+            <div class="article-content">
                 <h3>¿Como cuidar de su alimentacion?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quisquam ad! Voluptatibus recusandae, cumque,
                     maiores consectetur natus totam necessitatibus voluptas facere in, nulla dolor iusto aut consequuntur culpa velit. 
@@ -111,12 +142,54 @@
                 <a href="#" class="btn-leer">Leer Mas</a>
             </div>
         </article>
-
-       
-        <div class="imagen">
-            <img src="img/bannerPrinc.jpg" alt="Mujer comiendo y disfrutando" width="200px">
-            <p>10+ Years of Experience</p>
-        </div>
     </main>
+        <!--Footer del blog-->
+      
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="columna marca">
+                <h3 id="logo">Nutrition</h3>
+                <div class="sociales">
+                    <a href="https://github.com/AbelVOrtuno" target="_blank"><img src="img/githubLog.png" alt="github" class="sociales"></a>
+                    <a href="https://www.facebook.com/abel.valverde.73932" target="_blank"><img src="img/faceLog.png" alt="facebook" class="sociales"></a>
+                    <a href="https://www.instagram.com/abelv1571/" target="_blank"><img src="img/instagramLog.jpg" alt="instagram" class="sociales"></a>
+                </div>
+            </div>
+            
+            <div class="columna enlaces">
+                <h3>Enlaces rapidos</h3>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Consulta</a></li>
+                    <li><a href="#">Mi blog</a></li>
+                    <li><a href="#">Libros</a></li>
+                </ul>
+            </div>
+
+            <div class="columna servicios">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#">Soporte y motivacion</a></li>
+                    <li><a href="#">Programas de perdida de peso</a></li>
+                    <li><a href="#">Nutricion personalizada</a></li>
+                    <li><a href="#">Vida diaria saludable</a></li>
+                    <li><a href="#">Equilibrio cuerpo y mente</a></li>
+                </ul>
+            </div>
+
+            <div class="columna newsletter">
+                <h4>Hoja Informativa</h4>
+                <form class="input-newsletter">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ingresa tu email" required>
+                    <button type="submit">Entregar</button>
+                </form>
+            </div>   
+        </div>
+        <div class="derechos">
+            <p>&copy; Diseñado y Desarrollado por <span>AbelVOrtuno </span> 2025</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
