@@ -55,14 +55,15 @@
 
     <!--Hero-->
     <section class="hero-about contenedor">
-        <div class="texto">
-            <h2>Mas de 10 años <span> de experiencia</span></h2>
-            <p>Mejorando tu bienestar con un enfoque integral en salud</p>
-            <a href="#" class="btn">Programa tu consulta</a>
-        </div>
         <div class="imagen">
             <img src="img/bannerPrinc.jpg" alt="Disfrutando de un alimento saludable">
         </div>
+        <div class="texto">
+            <h2>Mas de 10 años <span> de experiencia</span></h2>
+            <p id="objetivo">Mejorando tu bienestar con un enfoque integral en salud</p>
+            <a href="#" class="btn">Programa tu consulta</a>
+        </div>
+        
     </section>
 
     <!--Cita-->
@@ -78,94 +79,131 @@
     </section>
 
     <main>
-        <!--Estadisticas-->
-        <section class="estadisticas">
+        <div class="centro">
+            <!--Estadisticas-->
             <h2>Solucion en sencillos pasos Vida exitosa</h2>
-            <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" /><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M17 10h2a2 2 0 0 1 2 2v1" /><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M3 13v-1a2 2 0 0 1 2 -2h2" /></svg><h3>3.5k+</h3><p>Clientes Satisfechos</p></div>
-            <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg><h3>32K</h3><p>Horas de trabajo</p></div>
-            <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 24 24" fill="#ffffff" class="icon icon-tabler icons-tabler-filled icon-tabler-file-time"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm0 8a5 5 0 0 0 -4.995 4.783l-.005 .217a5 5 0 1 0 5 -5m0 2a3 3 0 1 1 0 6a3 3 0 0 1 0 -6m0 .496a1 1 0 0 0 -1 1v1.504a1 1 0 0 0 .293 .707l1 1a1 1 0 0 0 1.414 0l.083 -.094a1 1 0 0 0 -.083 -1.32l-.707 -.708v-1.089a1 1 0 0 0 -1 -1" /><path d="M19 7h-4l-.001 -4.001z" /></svg><h3>12</h3><p>Cursos profesionales</p></div>
-            <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="24" viewBox="0 0 24 24" fill="#ffffff" class="icon icon-tabler icons-tabler-filled icon-tabler-rosette"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944z" /></svg><h3>100%</h3><p>Resultados</p></div>
-        </section>
-        <!--Nucleo o parte central-->
-        <section class="nucleo">
-            <div class="texto">
-                <h3>El nucleo de mi trabajo</h3>
-                <ol>
-                    <li>
-                        Los pilares del bienestar
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores soluta quas eos voluptatum, ducimus
+            <section class="estadisticas">
+                <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" /><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M17 10h2a2 2 0 0 1 2 2v1" /><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M3 13v-1a2 2 0 0 1 2 -2h2" /></svg><h3>3.5k+</h3><p>Clientes Satisfechos</p></div>
+                <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg><h3>32K</h3><p>Horas de trabajo</p></div>
+                <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#ffffff" class="icon icon-tabler icons-tabler-filled icon-tabler-file-time"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm0 8a5 5 0 0 0 -4.995 4.783l-.005 .217a5 5 0 1 0 5 -5m0 2a3 3 0 1 1 0 6a3 3 0 0 1 0 -6m0 .496a1 1 0 0 0 -1 1v1.504a1 1 0 0 0 .293 .707l1 1a1 1 0 0 0 1.414 0l.083 -.094a1 1 0 0 0 -.083 -1.32l-.707 -.708v-1.089a1 1 0 0 0 -1 -1" /><path d="M19 7h-4l-.001 -4.001z" /></svg><h3>12</h3><p>Cursos profesionales</p></div>
+                <div class="dato"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="#ffffff" class="icon icon-tabler icons-tabler-filled icon-tabler-rosette"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944z" /></svg><h3>100%</h3><p>Resultados</p></div>
+            </section>
+            <!--Nucleo o parte central-->
+            <section class="nucleo">
+                <div class="texto">
+                    <h3 id="nucleo">El nucleo de mi trabajo</h3>
+                    <ol>
+                        <li>
+                            Los pilares del bienestar
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores soluta quas eos voluptatum, ducimus
                              earum reprehenderit magnam eveniet veritatis fuga, assumenda eaque distinctio, sapiente mollitia quam officiis asperiores. Eum!</p>
-                    </li>
-                    <li>
-                        Curacion natural del cuerpo
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, doloremque. Facilis recusandae 
+                        </li>
+                        <li>
+                            Curacion natural del cuerpo
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, doloremque. Facilis recusandae 
                             quidem perspiciatis ea voluptatibus. Laudantium ipsa, 
                             cumque exercitationem corrupti enim quae nisi dolore cum. Libero molestiae obcaecati eius?</p>
-                    </li>
-                    <li>
-                        Equilibrio bioquimico
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, itaque perferendis 
+                        </li>
+                        <li>
+                            Equilibrio bioquimico
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, itaque perferendis 
                             rerum beatae sequi nemo deserunt voluptatibus aliquam eos
                              aspernatur dolores alias placeat harum mollitia tempora porro officia est molestias.</p>
-                    </li>
-                    <li>
-                        El poder de la mentalidad
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum doloremque officia,
+                        </li>
+                        <li>
+                            El poder de la mentalidad
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum doloremque officia,
                              reprehenderit, voluptatibus amet facere deserunt 
                             laboriosam natus dolore rem, nihil aut dolorum. Ducimus nihil assumenda tenetur itaque velit?</p>
-                    </li>
-                </ol>
-            </div>
-            <div class="imagen">
-                <img src="img/cocinando.jpg" alt="Nutriologa cortando frutas">
-            </div>
-        </section>
+                        </li>
+                    </ol>
+                </div>
+                <div class="imagen">
+                    <img src="img/cocinando.jpg" alt="Nutriologa cortando frutas" id="nutriologa">
+                </div>
+            </section>
+        </div>
+        
 
         <!--Libro o manual de nutricion-->
         <section class="libro">
-            <img src="img/recetasCocina.jpg" alt="Libro de recetas caseras">
+            <div class="imagen">
+                <img src="img/recetasCocina.jpg" alt="Libro de recetas caseras" id="libro">
+            </div>
             <div class="info">
                 <h3>Como cocinar de manera saludable</h3>
                 <p>Sanar desde la cocina es posible.Aprende a disfrutar recetas simples,naturales y llenas de energia.</p>
                 <a href="#" class="btn">Comprar ahora</a>
             </div>
         </section>
-
         <!--Pasos-->
         <section class="pasos">
-            <h3>Pasos sencillos de nuestra parte para una vida mas saludable</h3>
-            <p>¡Introduce tu e-mail y consigue el curso gratis con nosotros!</p>
-            <a href="#" class="btn">Descubrelo</a>
-        </section>
-
-        <!--FaQ-->
-        <section class="faq">
-            <h3>Preguntas Frecuentes</h3>
-            <div class="faq-item">
-                <button class="faq-pregunta">¿Que es la nutricion holistica?</button>
-                <div class="faq-respuesta">
-                    <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
+            <div class="pasos__overlay">
+                <div class="pasos__content">
+                    <h3 id="pasos">Pasos sencillos de nuestra parte para una vida mas saludable</h3>
+                    <p>¡Introduce tu e-mail y consigue el curso gratis con nosotros!</p>
+                    <form class="pasos__form" id="formSuscripcion">
+                        <input type="email" id="emailSuscripcion" placeholder="Enter a valid email address">
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
                 </div>
             </div>
-            
-            <div class="faq-item">
-                <button class="faq-pregunta">¿Ofreces asesorias online?</button>
-                <div class="faq-respuesta">
-                    <p>Si,realizo consultas en linea personalizadas adaptadas a tus objetivos.</p>
+        </section>
+        <!--FaQ y formulario de contacto-->
+        <section class="faq texto">
+            <h3 id="faq">Preguntas Frecuentes</h3>
+            <div class="cuestions">
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Que es un naturopata?</button>
+                    <div class="faq-respuesta">
+                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
+                    </div>
                 </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Como puede ayudarme un naturopata?</button>
+                    <div class="faq-respuesta">
+                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Como funcionan las consultas nutricionales online?</button>
+                    <div class="faq-respuesta">
+                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Que es una "dieta saludable"?</button>
+                    <div class="faq-respuesta">
+                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Que es la nutricion holistica?</button>
+                    <div class="faq-respuesta">
+                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Ofreces asesorias online?</button>
+                    <div class="faq-respuesta">
+                        <p>Si,realizo consultas en linea personalizadas adaptadas a tus objetivos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <h3>¿Le podemos ayudar en algo?</h3>
+                <p>Tomese unos minutos para contarme sobre usted y sus objetivos de salud antes de que comencemos a trabajar juntos:</p>
+                <form id="formContacto">
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                    <input type="email" id="correo" name="email" placeholder="Tu Correo">
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </form>
             </div>
         </section>
 
         <!--Contacto-->
-        <secton class="contacto">
-            <h3>¿Le podemos ayudar en algo?</h3>
-            <form id="form-contacto">
-                <input type="text" name="nombre" placeholder="Tu Nombre">
-                <input type="email" name="email" placeholder="Tu Correo">
-                <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-                <button type="submit" class="btn">Enviar mensaje</button>
-            </form>
-        </secton>
+        
     </main>
     
     <footer class="footer">
@@ -213,11 +251,6 @@
             <p>&copy; Diseñado y Desarrollado por <span>AbelVOrtuno </span> 2025</p>
         </div>
     </footer>
-    
-    
-    
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
