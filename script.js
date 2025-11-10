@@ -24,12 +24,12 @@ addButtons.forEach(btn => {
     });
 });
 // FAQ desplegable //
-document.querySelectorAll(".faq-pregunta").forEach(btn => {
+/*document.querySelectorAll(".faq-pregunta").forEach(btn => {
     btn.addEventListener("click", () => {
         const answer = btn.nextElementSibling;
         answer.classList.toggle("active");
     });
-});
+}); */
 // Validacion de formulario de contacto //
 document.getElementById("formContacto").addEventListener("submit", e => {
     e.preventDefault();
@@ -54,3 +54,40 @@ document.getElementById("formSuscripcion").addEventListener("submit", e => {
     }
     console.log("Suscripcion completada correctamente");
 });
+
+// FaQ con flecha animada y efecto de acordeon //
+
+document.addEventListener('DOMContentLoaded', () => {
+    const faqButtons = document.querySelectorAll('.faq-pregunta');
+
+    console.log('FaQ botones encontrados:', faqButtons.length);
+
+    faqButtons.forEach(btn => {
+        btn.addEventListener('click', (e)=> {
+            e.preventDefault();
+
+            const respuesta = btn.nextElementSibling;
+            const estabaAbierta = respuesta.classList.contains('active');
+
+            document.querySelectorAll('.faq-respuesta').forEach(r => r.classList.remove('active'));
+            document.querySelectorAll('.faq-pregunta').forEach(q => q.classList.remove('active'));
+
+            if (!estabaAbierta) {
+                respuesta.classList.add('active');
+                btn.classList.add('active');
+            }
+
+            console.log('Click FaQ:', btn.textContent.trim(), '-> estabaAbierta:' , estabaAbierta);
+        })
+    })
+})
+
+
+/*document.addEventListener('DOMContentLoaded', () => {
+    const faqButtons = document.querySelectorAll('.faq-pregunta');
+
+    console.log('FaQ botones encontrados:', faqButtons.length);
+}) */
+   
+
+   
