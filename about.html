@@ -61,7 +61,7 @@
         <div class="texto">
             <h2>Mas de 10 años <span> de experiencia</span></h2>
             <p id="objetivo">Mejorando tu bienestar con un enfoque integral en salud</p>
-            <a href="#" class="btn">Programa tu consulta</a>
+            <button type="submit" class="btn">Programa tu consulta</button>
         </div>
         
     </section>
@@ -133,7 +133,7 @@
             <div class="info">
                 <h3>Como cocinar de manera saludable</h3>
                 <p>Sanar desde la cocina es posible.Aprende a disfrutar recetas simples,naturales y llenas de energia.</p>
-                <a href="#" class="btn">Comprar ahora</a>
+                <button type="submit" class="btn">Comprar ahora</button>
             </div>
         </section>
         <!--Pasos-->
@@ -150,55 +150,79 @@
             </div>
         </section>
         <!--FaQ y formulario de contacto-->
-        <section class="faq texto">
-            <h3 id="faq">Preguntas Frecuentes</h3>
-            <div class="cuestions">
+        <section class="faq" id="faq">
+            <h3>Preguntas Frecuentes</h3>
                 <div class="faq-item">
-                    <button class="faq-pregunta">¿Que es un naturopata?</button>
+                    <button class="faq-pregunta">
+                        ¿Que es un naturopata?
+                        <span class="arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-respuesta">
+                        <p>Un naturopata es un profesional de la salud que utiliza terapias naturales y un enfoque holistico para apoyar la capacidad del cuerpo de 
+                            curarse a si mismo.Su objetivo es promover el bienestar fisico,mental y emocional mediante la nutricion,el estilo de vida y tratamientos naturales.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">
+                        ¿Como puede ayudarme un naturopata?
+                        <span class="arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-respuesta">
+                        <p>Puede ayudarte a identificar la causa raiz de tus sintomas,crear un plan de nutricion personalizado y ayudarte a establecer habitos saludables que se adapten a tu estilo de vida.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">
+                        ¿Como funcionan las consultas nutricionales online?
+                        <span class="arrow" aria-hidden="true"></span>
+                    </button>
                     <div class="faq-respuesta">
                         <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-pregunta">¿Como puede ayudarme un naturopata?</button>
+                    <button class="faq-pregunta">
+                        ¿Que es una "dieta saludable"?
+                        <span class="arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-respuesta">
+                       <p>Una dieta saludable es aquella que aporta los nutrientes necesarios para mantener un equilibrio fisico y
+                        mental,incluyendo alimentos frescos,naturales y variados.Tambien implica comer conscientemente y sin restricciones extremas. </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">
+                        ¿Que es la nutricion holistica?
+                        <span class="arrow" aria-hidden="true"></span>
+                    </button>
                     <div class="faq-respuesta">
                         <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-pregunta">¿Como funcionan las consultas nutricionales online?</button>
+                    <button class="faq-pregunta">
+                        ¿Puedo recibir orientacion nutricional si tengo una condicion medica?
+                        <span class="arrow" aria-hidden="true"></span>
+                    </button>
                     <div class="faq-respuesta">
-                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-pregunta">¿Que es una "dieta saludable"?</button>
-                    <div class="faq-respuesta">
-                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-pregunta">¿Que es la nutricion holistica?</button>
-                    <div class="faq-respuesta">
-                        <p>Es un enfoque integral que considera cuerpo,mente y emociones para lograr bienestar total.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-pregunta">¿Ofreces asesorias online?</button>
-                    <div class="faq-respuesta">
-                        <p>Si,realizo consultas en linea personalizadas adaptadas a tus objetivos.</p>
+                        <p>Si.Con una evaluacion previa,puedo ofrecerte un plan nutricional adaptado a tus necesidades especificas,complementario a tu tratamiento medico,siempre priorizando tu 
+                            seguridad y bienestar.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="formulario">
-                <h3>¿Le podemos ayudar en algo?</h3>
-                <p>Tomese unos minutos para contarme sobre usted y sus objetivos de salud antes de que comencemos a trabajar juntos:</p>
-                <form id="formContacto">
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
-                    <input type="email" id="correo" name="email" placeholder="Tu Correo">
-                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-                    <button type="submit" class="btn">Enviar mensaje</button>
-                </form>
+                <div class="entradas">
+                    <h3>¿Le podemos ayudar en algo?</h3>
+                    <p>Tomese unos minutos para contarme sobre usted y sus objetivos de salud antes de que comencemos a trabajar juntos:</p>
+                    <form id="formContacto">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                        <input type="email" id="correo" name="email" placeholder="Tu Correo">
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -251,6 +275,6 @@
             <p>&copy; Diseñado y Desarrollado por <span>AbelVOrtuno </span> 2025</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
