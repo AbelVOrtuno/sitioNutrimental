@@ -1,0 +1,34 @@
+// Seccion principal de nuestra pagina de contacto //
+.central
+    padding-top: 1rem
+    padding-bottom: 1.5rem
+    background-color: rgb(10, 63, 10)
+.presentacion
+    color: $blanco
+    display grid
+    grid-template-columns 1fr 
+    align-items center
+    gap: 2rem
+@media (min-width 768px ) 
+    .presentacion
+        grid-template-columns: repeat(2, 50%)
+        gap 1rem
+        align-items: center
+#contacto
+    color $blanco
+    text-align center
+.portada
+    padding-bottom: 2rem
+.portada-img
+    width 90%
+    height: 300px
+    margin: 0 auto
+    border-radius: 20% 20% 0 0
+.portada__texto
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 auto
+// seccion del formulario //
+.formulario h3
+    text-align: center
