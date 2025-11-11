@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Fuente Principal-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Contactanos</title>
+</head>
+<body>
+     <header class="header">
+        <div class="navegacion">
+            <h1 class="logo">Nutrition Live</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <select class="menu-select" id="pageSelect">
+                    <option value="">Pages</option>
+                    <option value="landing.html">Landing</option>
+                    <option value="faq.html">FAQ</option>
+                    <option value="services.html">Services</option>
+                    <option value="store.html">Store</option>
+                    <option value="blog.html">Blog Page</option>
+                    <option value="pricing.html">Pricing</option>
+                    <option value="booking.html">Booking</option>
+                </select>
+                <a href="contacto.html">Contact</a>
+            </nav>
+            <div class="reservar">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffcc00"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+                <a href="contacto.html" class="btn-reservar" data-product="Vitamina C">Agregar al Carrito</a>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+<!--Seccion Principal-->
+    <main class="central">
+        <h1 id="contacto">Contactenos</h1>
+        <section class="presentacion">
+            <div class="portada">
+                <img src="img/banner1.jpg" alt="Portada" class="portada-img">
+            </div>
+            <div class="portada__texto">
+                <h2>¡Tus resultados son nuestra maxima prioridad!</h2>
+                <a href="#" class="btn">Trabaja con nosotros</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="formulario">
+                <div class="entradas">
+                    <h3>¿Le podemos ayudar en algo?</h3>
+                    <p>Tomese unos minutos para contarme sobre usted y sus objetivos de salud antes de que comencemos a trabajar juntos:</p>
+                    <form id="formContacto">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                        <input type="email" id="correo" name="email" placeholder="Tu Correo">
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="columna marca">
+                <h3 id="logo">Nutrition</h3>
+                <div class="sociales">
+                    <a href="https://github.com/AbelVOrtuno" target="_blank"><img src="img/githubLog.png" alt="github" class="sociales"></a>
+                    <a href="https://www.facebook.com/abel.valverde.73932" target="_blank"><img src="img/faceLog.png" alt="facebook" class="sociales"></a>
+                    <a href="https://www.instagram.com/abelv1571/" target="_blank"><img src="img/instagramLog.jpg" alt="instagram" class="sociales"></a>
+                </div>
+            </div>
+            
+            <div class="columna enlaces">
+                <h3>Enlaces rapidos</h3>
+                <ul>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="#">Consulta</a></li>
+                    <li><a href="#">Mi blog</a></li>
+                    <li><a href="#">Libros</a></li>
+                </ul>
+            </div>
+
+            <div class="columna servicios">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#">Soporte y motivacion</a></li>
+                    <li><a href="#">Programas de perdida de peso</a></li>
+                    <li><a href="#">Nutricion personalizada</a></li>
+                    <li><a href="#">Vida diaria saludable</a></li>
+                    <li><a href="#">Equilibrio cuerpo y mente</a></li>
+                </ul>
+            </div>
+
+            <div class="columna newsletter">
+                <h4>Hoja Informativa</h4>
+                <form class="input-newsletter">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ingresa tu email" required>
+                    <button type="submit">Entregar</button>
+                </form>
+            </div>   
+        </div>
+        <div class="derechos">
+            <p>&copy; Diseñado y Desarrollado por <span>AbelVOrtuno </span> 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
